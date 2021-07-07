@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13E93A46-BBFB-45CF-8C36-871EDF548CDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsFormation</RootNamespace>
+    <AssemblyName>WindowsFormsFormation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientCommandes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCommandes.Designer.cs">
+      <DependentUpon>ClientCommandes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DessinSouris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DessinSouris.Designer.cs">
+      <DependentUpon>DessinSouris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editeur.Designer.cs">
+      <DependentUpon>Editeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FenetresMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FenetresMDI.Designer.cs">
+      <DependentUpon>FenetresMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFenetre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFenetre.Designer.cs">
+      <DependentUpon>FormFenetre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModalTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModalTests.Designer.cs">
+      <DependentUpon>FormModalTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Horloge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horloge.Designer.cs">
+      <DependentUpon>Horloge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaBoiteDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaBoiteDialogue.Designer.cs">
+      <DependentUpon>MaBoiteDialogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientCommandes.resx">
+      <DependentUpon>ClientCommandes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DessinSouris.resx">
+      <DependentUpon>DessinSouris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editeur.resx">
+      <DependentUpon>Editeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FenetresMDI.resx">
+      <DependentUpon>FenetresMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFenetre.resx">
+      <DependentUpon>FormFenetre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horloge.resx">
+      <DependentUpon>Horloge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaBoiteDialogue.resx">
+      <DependentUpon>MaBoiteDialogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Documents\net4.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

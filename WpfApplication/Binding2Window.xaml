@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplication.Binding2Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        Title="Binding.." Height="250" Width="450" WindowStartupLocation="CenterScreen" Icon="imgs/icons8-internet-48.png" ResizeMode="NoResize" ShowInTaskbar="False">
+
+    <DockPanel Margin="10" Background="Black">
+        <StackPanel DockPanel.Dock="Right" Margin="10" Width="72">
+            <Button Name="btnAddUser" Click="btnAddUser_Click">Add</Button>
+            <Button Name="btnChangeUser" Click="btnChangeUser_Click" Margin="0,5">Change</Button>
+            <Button Name="btnDeleteUser" Click="btnDeleteUser_Click">Delete</Button>
+        </StackPanel>
+        <ListBox Name="lbUsers" DisplayMemberPath="Name" Margin="10" Width="323"></ListBox>
+    </DockPanel>
+
+</Window>
